@@ -4486,6 +4486,16 @@ MonoBehaviour:
   - {fileID: 7222250931380664777, guid: 8923e13c7322b374fa4673e0bccf3042, type: 3}
   target: {fileID: 1525932952}
   laserpoint: {fileID: 1427083219}
+  esseTroca: {fileID: 115664873}
+  spritesArray:
+  - {fileID: 21300000, guid: 3c89602ee9ee0a44bae439fdd44e9949, type: 3}
+  - {fileID: 21300000, guid: c3e9257068063c14e83ef475eb65cc2d, type: 3}
+  - {fileID: 21300000, guid: 798781f7635dbbe408fe0cda7085d28e, type: 3}
+  - {fileID: 21300000, guid: e54859196ea303e48996c57e112a9363, type: 3}
+  - {fileID: 21300000, guid: 64b670093ed74e648a849a48032f9a4a, type: 3}
+  - {fileID: 21300000, guid: 639b56bf7a73a0445884430f1c4ccc31, type: 3}
+  - {fileID: 21300000, guid: 1a1bd058ed037f641870414dddd942df, type: 3}
+  - {fileID: 21300000, guid: 320dee9ad01daeb4e938356b603a9a9c, type: 3}
 --- !u!4 &963194228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1479332432552102476, guid: 275336d66d5e75843941afbb9ee118fe,

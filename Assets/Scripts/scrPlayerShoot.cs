@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class scrPlayerShoot : MonoBehaviour
 {
@@ -9,8 +10,11 @@ public class scrPlayerShoot : MonoBehaviour
     public GameObject target;
     public GameObject laserpoint;
 
+    public Image esseTroca;
+    public Sprite[] spritesArray;
 
-    void Start()
+
+    void Update()
     {
         float movx = Input.GetAxis("Mouse Y");
         transform.Rotate(new Vector3(-movx,0,0));
@@ -39,6 +43,8 @@ public class scrPlayerShoot : MonoBehaviour
         if (Input.GetKey(KeyCode.Alpha8)){
         	indexWeapon = 7;
         }
+
+        esseTroca.sprite = spritesArray[indexWeapon];
 
         if(Input.GetButtonDown("Fire1"))
         {
