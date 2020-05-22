@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4349508763667278056}
   - component: {fileID: 753645388}
   - component: {fileID: 5900678653141721689}
+  - component: {fileID: -4111503769646856067}
   m_Layer: 0
   m_Name: ElectricCube
   m_TagString: Untagged
@@ -109,7 +110,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -207,6 +208,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4111503769646856067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118408213552776196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97bfa5861e5bab4faf6d5225d0f84ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombForce: -1000
+  fxPrefab: {fileID: 5807118956754125840, guid: bbc833a7776ee5549831f1aad168045f,
+    type: 3}
 --- !u!1001 &5864532920031253690
 PrefabInstance:
   m_ObjectHideFlags: 0
