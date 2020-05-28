@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8211579823229517494}
   m_Layer: 0
   m_Name: Tnt
-  m_TagString: Untagged
+  m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombForce: 1000
+  timeBomb: 3
   fxPrefab: {fileID: 7515791353916339649, guid: 8563c40e1b8d8c748b9b643ce18158bc,
     type: 3}
 --- !u!1001 &6667200502738794166

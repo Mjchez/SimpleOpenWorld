@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -4111503769646856067}
   m_Layer: 0
   m_Name: ElectricCube
-  m_TagString: Untagged
+  m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombForce: -1000
+  timeBomb: 3
   fxPrefab: {fileID: 5807118956754125840, guid: bbc833a7776ee5549831f1aad168045f,
     type: 3}
 --- !u!1001 &5864532920031253690
