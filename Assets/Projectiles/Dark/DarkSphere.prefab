@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2061991767}
   - component: {fileID: -8260090166740601175}
   - component: {fileID: -2166584145896859967}
+  - component: {fileID: 5933722542750777108}
   m_Layer: 0
   m_Name: DarkSphere
   m_TagString: PlayerProjectile
@@ -221,6 +222,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 3
+--- !u!114 &5933722542750777108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015990325632029605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404dca9b85dc6414b851d9641561e019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destruirAoEnconstar: 0
+  efeitoExplosao: {fileID: 8064056730188198416, guid: dfefad527caf9b0418d2ecf50a0c77a1,
+    type: 3}
 --- !u!1001 &4787364689943336873
 PrefabInstance:
   m_ObjectHideFlags: 0

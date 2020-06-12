@@ -5,19 +5,10 @@ using UnityEngine;
 public class scrBlob : MonoBehaviour
 {
     Rigidbody rdb;
-    // Start is called before the first frame update
     void Start()
     {
         rdb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     private void OnCollisionEnter(Collision collision)
     {
         print("bati");

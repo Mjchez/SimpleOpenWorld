@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1427083219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1427083220}
+  m_Layer: 0
+  m_Name: LaserPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1427083220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427083219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20, y: 0.7, z: 16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1479332432552102476}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1479332431652921092
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,7 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479332431652921092}
-  m_LocalRotation: {x: -0, y: -0.9625414, z: -0, w: 0.27113467}
+  m_LocalRotation: {x: 0, y: -0.9625405, z: 0, w: 0.271138}
   m_LocalPosition: {x: 29.75, y: 1.47, z: 31.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -138,6 +168,7 @@ GameObject:
   - component: {fileID: 1479332432552102476}
   - component: {fileID: 1479332432552102475}
   - component: {fileID: 1479332432552102474}
+  - component: {fileID: 963194226}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -155,7 +186,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1427083220}
   m_Father: {fileID: 1479332431652921208}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -210,3 +242,36 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479332432552102473}
   m_Enabled: 1
+--- !u!114 &963194226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479332432552102473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201f495ecb1fc354ebc0df41454e0370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilesPrefab:
+  - {fileID: 7015990325632029605, guid: 472330ebfd544904e95b1174b42888bf, type: 3}
+  - {fileID: 8118408213552776196, guid: 7da16387f350c054bbe9e8b81e0e1476, type: 3}
+  - {fileID: 4286848479729646731, guid: 5a6bb71a99ea7e240afbeb8114dcd66d, type: 3}
+  - {fileID: 8648705167837295298, guid: 38663181be232414685e9891d39235a0, type: 3}
+  - {fileID: 8772984581825285944, guid: 539124a75f49c074ebbdbe4c6ed6e538, type: 3}
+  - {fileID: 792962792202692770, guid: da63039ff73955f45a777c3c401fa0e2, type: 3}
+  - {fileID: 2011555600509876187, guid: f76d54f86dd61554cb267abafced69e9, type: 3}
+  - {fileID: 2964366458705159490, guid: 129bba682828ab84cb1fec0011708c20, type: 3}
+  target: {fileID: 0}
+  laserpoint: {fileID: 1427083219}
+  esseTroca: {fileID: 0}
+  spritesArray:
+  - {fileID: 21300000, guid: 3c89602ee9ee0a44bae439fdd44e9949, type: 3}
+  - {fileID: 21300000, guid: c3e9257068063c14e83ef475eb65cc2d, type: 3}
+  - {fileID: 21300000, guid: 798781f7635dbbe408fe0cda7085d28e, type: 3}
+  - {fileID: 21300000, guid: e54859196ea303e48996c57e112a9363, type: 3}
+  - {fileID: 21300000, guid: 64b670093ed74e648a849a48032f9a4a, type: 3}
+  - {fileID: 21300000, guid: 639b56bf7a73a0445884430f1c4ccc31, type: 3}
+  - {fileID: 21300000, guid: 1a1bd058ed037f641870414dddd942df, type: 3}
+  - {fileID: 21300000, guid: 320dee9ad01daeb4e938356b603a9a9c, type: 3}
