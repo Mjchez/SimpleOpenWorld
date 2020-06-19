@@ -8,22 +8,39 @@ public class scrPortal : MonoBehaviour
     public string CenaNome;
     public Transform pontoRetorno;
 
-    static bool inicioJogo =true;
+    public bool deveAtivarRetorno;
+    public int id;
+    static bool deveRetornar;
+    static int idRetorno;
+    Color transparente = new Color(0,0,0,0);
 
     void Start(){
-        if(!inicioJogo){
+        Time.timeScale = 1;
+
+        if(deveRetornar && id == idRetorno){
         GameObject jogadorGbj = GameObject.FindWithTag("Player");
         Transform jogadorTr = jogadorGbj.GetComponent<Transform>();
         jogadorTr.position = pontoRetorno.position;
         jogadorTr.rotation = pontoRetorno.rotation;
         }
-
-        inicioJogo = false;
     }
 
     void OnTriggerEnter(Collider col){
         if(col.gameObject.tag == "Player"){
-            SceneManager.LoadScene(CenaNome);
+            Time.timeScale = 0;
+            if(deveAtivarRetorno){
+                deveRetornar = true;
+            }
+            
+            idRetorno = id;
+            StartCoroutine(CarregarCena());
         }
+    }
+
+    IEnumerator CarregarCena(){
+            scrTransicao transicao = FindObjectOfType<scrTransicao>();
+            transicao.IniciarTransicao(transparente, Color.black);
+            yield return new WaitUntil(() => transicao.acabou);
+            SceneManager.LoadScene(CenaNome);
     }
 }
